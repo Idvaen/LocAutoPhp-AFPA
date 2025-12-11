@@ -35,4 +35,5 @@ class Citadine extends Vehicule
     public function getInfosCompletes(): string{
         return Vehicule::__toString() . " Autinomie: " . $this->getAutonomie();
     }
+    
 }

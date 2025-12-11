@@ -4,9 +4,9 @@ class ParcVehicules
 {
     private static $parc;
 
-    public static function enregistrer(Vehicule $vehicule)
+    public static function enregistrer(Inventoriable $inventoriable)
     {
-        self::$parc[] = $vehicule;
+        self::$parc[] = $inventoriable;
     }
 
     public static function getParc()
@@ -17,6 +17,11 @@ class ParcVehicules
             }
         } else
             return "Le parc est vide!";
+    }
+
+    // ------------------- ALLER PLUS LOIN ---------------------
+    public static function searchVehiculeByID() {
+        // getIdentifiant()
     }
 }
 
