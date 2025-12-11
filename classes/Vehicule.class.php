@@ -2,9 +2,10 @@
 
 abstract class Vehicule extends Inventoriable
 {
+
     private $marque;
     private $modele;
-    private $identifiant;
+    protected $identifiant;
 
     public function __construct(string $marque, string $modele, string $identifiant)
     {
@@ -57,7 +58,7 @@ abstract class Vehicule extends Inventoriable
     /**
      * Get the value of identifiant
      */
-    public function getIdentifiant()
+    public function getIdentifiant(): string
     {
         return $this->identifiant;
     }
@@ -71,8 +72,4 @@ abstract class Vehicule extends Inventoriable
 
         return $this;
     }
-
-
-    public abstract function getInfosCompletes() : string;
-
 }
