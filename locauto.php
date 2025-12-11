@@ -8,12 +8,13 @@
     $f1 = new Familial("AUDI", "442 BAR", "TR6566R", 6);
     $u1 = new Utiliter("BMW", "666 Diabl", "MM787U", 800);
 
-    $g1 = new Garage("G123", 120,5,3);
+    $g1 = new Garage("G123", '120',5,3);
 
+    //Vehiecule test Parc
     ParcVehicules::enregistrer($c1);
     ParcVehicules::enregistrer($f1);
     ParcVehicules::enregistrer($u1);
-
+    //Garage test Parc
     ParcVehicules::enregistrer($g1);
 
 ?>
