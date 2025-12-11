@@ -1,9 +1,9 @@
 <?php
 
-abstract class Inventoriable
+interface Inventoriable
 {
 
-    public abstract function getInfosCompletes(): string;
-    public abstract function getIdentifiant(): string;
+    public function getInfosCompletes(): string;
+    public function getIdentifiant(): string;
 
 }
