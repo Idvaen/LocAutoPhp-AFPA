@@ -1,0 +1,25 @@
+<?php
+
+class ParcVehicules
+{
+    private static $parc;
+
+    public static function enregistrer(Vehicule $vehicule)
+    {
+        self::$parc[] = $vehicule;
+    }
+
+    public static function getParc()
+    {
+        if (!empty(self::$parc)) {
+            foreach (self::$parc as $vehicule) {
+                echo get_class($vehicule) . " : " . $vehicule->getInfosCompletes() . "<br>\n";
+            }
+        } else
+            return "Le parc est vide!";
+    }
+}
+
+
+
+?>
