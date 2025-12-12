@@ -1,6 +1,6 @@
 <?php
 
-class Garage extends Inventoriable
+class Garage implements Inventoriable
 {
     private $identifiant;
     private float $surface;

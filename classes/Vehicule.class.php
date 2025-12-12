@@ -1,6 +1,6 @@
 <?php
 
-abstract class Vehicule extends Inventoriable
+abstract class Vehicule implements Inventoriable
 {
 
     private $marque;
