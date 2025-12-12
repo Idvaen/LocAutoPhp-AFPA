@@ -1,14 +1,24 @@
 <?php 
 
 class Materiel {
-    protected bool $disponibilite = false;
-        public function __construct(bool $disponibilite)
+    protected bool $disponible;
+        public function __construct(bool $disponible)
     {
-        $this->disponibilite = $disponibilite;
+        $this->disponible = $disponible;
     }
 
-    public function __toString(){
-        return $this->disponibilite;
+    public function isDisponible(): bool{
+        return true;
+    }
+
+    public function setDisponible(bool $disponible): bool{
+        return $this->disponible = $disponible;
+    }
+
+
+
+    public function __toString(): string{
+        return "Info: " . "Disponible: " . $this->disponible . " | ";
     }
 }
 

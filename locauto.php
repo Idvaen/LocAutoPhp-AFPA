@@ -10,12 +10,15 @@
 
     $g1 = new Garage("G123", '120',5,3);
 
+    $d1 = new Depanneuse('DE2341', true);
+
     //Vehiecule test Parc
     ParcVehicules::enregistrer($c1);
     ParcVehicules::enregistrer($f1);
     ParcVehicules::enregistrer($u1);
     //Garage test Parc
     ParcVehicules::enregistrer($g1);
+    ParcVehicules::enregistrer($d1);
 
 ?>
 

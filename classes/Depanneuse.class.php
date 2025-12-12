@@ -5,9 +5,10 @@ class Depanneuse extends Materiel implements Inventoriable
 
     private string $identifiant;
 
-    public function __construct(string $identifiant, bool $disponibilite)
+    public function __construct(string $identifiant, bool $disponible = false)
     {
-        parent::__construct($disponibilite);
+        parent::__construct($disponible);
+        $this->identifiant = $identifiant;
     }
 
     public function getIdentifiant():string
@@ -17,7 +18,7 @@ class Depanneuse extends Materiel implements Inventoriable
 
     public function getInfosCompletes(): string
     {
-        return 'TEST';
+        return parent::__toString() .  ' Identifiant: ' . $this->getIdentifiant();
     }
 }
 
